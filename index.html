@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web-dev Assignments WEEK1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f3ef;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #3e2c23;
+    }
+
+    h1 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #8B4513;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .container {
+      max-width: 850px;
+      background-color: #fff;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .section-header {
+      background-color: #8B4513;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      animation: slideInLeft 1s ease-in;
+    }
+
+    .list-group-item {
+      background-color: #fff;
+      border: 1px solid #e0d7d1;
+      border-radius: 8px;
+      margin-top: 0.6rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      animation: fadeInUp 0.5s ease-in;
+    }
+
+    .list-group-item a {
+      text-decoration: none;
+      color: #5a3b26;
+      font-weight: 500;
+      display: block;
+      transition: all 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      background-color: #f1e7e2;
+    }
+
+    .list-group-item a:hover {
+      color: #8B4513;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      0% { opacity: 0; transform: translateX(-30px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Scroll Animation Delay */
+    .list-group-item:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+    .list-group-item:nth-child(even) {
+      animation-delay: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1>My Web-dev Tasks</h1>
+    <ul class="list-group list-group-flush">
+
+      <!-- HTML Tasks -->
+      <div class="section-header">HTML Tasks</div>
+      <li class="list-group-item"><a href="Week_01/html/task1.html">HTML Task 1</a></li>
+      <li class="list-group-item"><a href="Week_01/html/task2.html">HTML Task 2</a></li>
+      <li class="list-group-item"><a href="Week_01/html/task3.html">HTML Task 3</a></li>
+
+      <!-- CSS Tasks -->
+      <div class="section-header">CSS Tasks</div>
+      <li class="list-group-item"><a href="Week_01/css/task1c.html">CSS Task 1</a></li>
+      <li class="list-group-item"><a href="Week_01/css/task2c.html">CSS Task 2</a></li>
+      <li class="list-group-item"><a href="Week_01/css/task3c.html">CSS Task 3</a></li>
+      <li class="list-group-item"><a href="Week_01/css/task4c.html">CSS Task 4</a></li>
+      <li class="list-group-item"><a href="Week_01/css/task5c.html">CSS Task 5</a></li>
+      <li class="list-group-item"><a href="Week_01/css/task6c.html">CSS Task 6</a></li>
+
+      <!-- Bootstrap Tasks -->
+      <div class="section-header">Bootstrap Tasks</div>
+      <li class="list-group-item"><a href="Week_01/bootstrap/task1b.html">Bootstrap Task 1</a></li>
+      <li class="list-group-item"><a href="Week_01/bootstrap/task2b.html">Bootstrap Task 2</a></li>
+      <li class="list-group-item"><a href="Week_01/bootstrap/task3b.html">Bootstrap Task 3</a></li>
+      <li class="list-group-item"><a href="Week_01/bootstrap/task4b.html">Bootstrap Task 4</a></li>
+      <li class="list-group-item"><a href="Week_01/bootstrap/task5b.html">Bootstrap Task 5</a></li>
+
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  background-color: #dcd94b;
+  font-family: Georgia, serif;
+  margin: 2em;
+}
+
+h1 {
+  color: purple;
+  font-size: 2em;
+}
+
+#container {
+  display: flex;
+}
+
+nav {
+  margin-right: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: inline-block;
+  width: 120px;
+  background: white;
+  color: blue;
+  padding: 5px;
+  text-decoration: none;
+  border-left: 10px solid black;
+}
+
+nav a:hover {
+  background: #eee;
+}
+
+article {
+  max-width: 500px;
+}
+
+em {
+  color: #333;
+}
+
+footer {
+  margin-top: 20px;
+  font-style: italic;
+  color: #444;
+  border-top: 1px dashed #666;
+  padding-top: 10px;
+}
